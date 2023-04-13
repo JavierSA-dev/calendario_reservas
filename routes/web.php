@@ -29,5 +29,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/calendario', [CalendarController::class, 'calendar'])->name('calendar');
+Route::post('/calendario/next', [CalendarController::class, 'calendar'])->name('calendar.next');
+Route::post('/calendario/prev', [CalendarController::class, 'calendar'])->name('calendar.prev');
 Route::post('/calendario', [CalendarController::class, 'reservar'])->name('reservar');
 require __DIR__.'/auth.php';

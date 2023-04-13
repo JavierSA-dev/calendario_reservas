@@ -13,5 +13,6 @@ class Reserva extends Model
         'telefono',
         'fecha'
     ];
+
     use HasFactory;
 }
